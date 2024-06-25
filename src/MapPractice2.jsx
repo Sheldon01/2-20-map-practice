@@ -5,10 +5,22 @@ export default function MapPractice2() {
 
     return (
         <div className="mapPractice">
-            <h2>Map Practice 2</h2>
+            <h2>Sheldon's Movies</h2>
             <button onClick={regenerate}>Change Movies</button>
             <div className="movieList">
-                This is where your movies need to go! (See expected2.html)
+                {movies.map((
+                    movie => {
+                        return (
+                            <div className="movieList">
+                                <h3 className="title">{movie.title}</h3>
+                                <span>Starring: {movie.star}</span>
+                                <span>Genre: {movie.genre}</span>
+                                <span>Iconic Quote: {movie.quote}</span>
+                            </div>
+                                
+                        )
+                    }
+                ))}
             </div>
         </div>
     );
