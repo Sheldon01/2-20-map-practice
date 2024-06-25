@@ -8,18 +8,13 @@ export default function MapPractice2() {
             <h2>Sheldon&apos;s Movies</h2>
             <button onClick={regenerate}>Change Movies</button>
             <div className="movieList">
-                {movies.map((
-                    movie => {
-                        return (
-                            <div className="movieList">
+                {movies.map((movie, index) => ( 
+                            <div key={index} className="movieList">
                                 <h3 className="title">{movie.title}</h3>
                                 <span>Starring: {movie.star}</span>
                                 <span>Genre: {movie.genre}</span>
                                 <span>Iconic Quote: {movie.quote}</span>
-                            </div>
-                                
-                        )
-                    }
+                            </div>     
                 ))}
             </div>
         </div>
