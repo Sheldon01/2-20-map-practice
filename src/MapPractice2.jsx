@@ -5,7 +5,7 @@ export default function MapPractice2() {
 
     return (
         <div className="mapPractice">
-            <h2>Sheldon's Movies</h2>
+            <h2>Sheldon&apos;s Movies</h2>
             <button onClick={regenerate}>Change Movies</button>
             <div className="movieList">
                 {movies.map((

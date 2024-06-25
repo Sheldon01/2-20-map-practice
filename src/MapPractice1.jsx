@@ -15,7 +15,7 @@ export default function MapPractice1() {
 
     return (
         <div className="mapPractice">
-            <h2>Sheldon's Emojis</h2>
+            <h2>Sheldon&apos;s Emojis</h2>
             <div className="emojiList">
                 {emojisArray.map(showEmojis)}
             </div>
